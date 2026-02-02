@@ -5,13 +5,13 @@
   
   <listeners>
 		<listener class-name="com.qa.opencart.listeners.ExtentReportListener" />
-		<listener class-name="com.qa.opencart.listeners.ExtentReportListener" />
+		<!--<listener class-name="com.qa.opencart.listeners.ExtentReportListener" />-->
 	</listeners>
 	
     <classes>
       <class name="com.qa.opencart.tests.HomePageTest"/>
       <class name="com.qa.opencart.tests.LoginPageTest"/>
-      <class name="com.qa.opencart.tests.BaseTest"/>
+   <!--   <class name="com.qa.opencart.tests.BaseTest"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

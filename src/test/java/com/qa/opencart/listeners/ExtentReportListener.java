@@ -91,22 +91,40 @@ public class ExtentReportListener implements ITestListener {
 	}
 
 	public synchronized void onTestSuccess(ITestResult result) {
-		System.out.println((result.getMethod().getMethodName() + " passed!"));
-		test.get().pass("Test passed");
-		test.get().pass(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot()).build());
-		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
+//		System.out.println((result.getMethod().getMethodName() + " passed!"));
+//		test.get().pass("Test passed");
+//		test.get().pass(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot()).build());
+//		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
+		String screenshotPath = takeScreenshot();
+		if (screenshotPath != null) {
+		    test.get().pass(
+		        MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build()
+		    );
+		}
 	}
 
 	public synchronized void onTestFailure(ITestResult result) {
-		System.out.println((result.getMethod().getMethodName() + " failed!"));
-		test.get().fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(),result.getMethod().getMethodName()).build());
-		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
+//		System.out.println((result.getMethod().getMethodName() + " failed!"));
+//		test.get().fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(takeScreenshot(),result.getMethod().getMethodName()).build());
+//		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
+		String screenshotPath = takeScreenshot();
+		if (screenshotPath != null) {
+		    test.get().fail(
+		        MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build()
+		    );
+		}
 	}
 
 	public synchronized void onTestSkipped(ITestResult result) {
-		System.out.println((result.getMethod().getMethodName() + " skipped!"));
-		test.get().skip(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromBase64String(takeScreenshot(), result.getMethod().getMethodName()).build());
-		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
+//		System.out.println((result.getMethod().getMethodName() + " skipped!"));
+//		test.get().skip(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromBase64String(takeScreenshot(), result.getMethod().getMethodName()).build());
+//		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
+		String screenshotPath = takeScreenshot();
+		if (screenshotPath != null) {
+		    test.get().skip(
+		        MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build()
+		    );
+		}
 	}
 
 	public synchronized void onTestFailedButWithinSuccessPercentage(ITestResult result) {

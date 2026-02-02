@@ -1,8 +1,6 @@
 package com.qa.opencart.tests;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.qa.opencart.constants.AppConstants;
 
 public class HomePageTest extends BaseTest{

@@ -30,6 +30,16 @@ public class BaseTest {
 	@AfterClass
 	public void tearDown() {
 //		page.context().browser().close();
+		
+//		if (PlaywrightFactory.getBrowserContext() != null) {
+//	        PlaywrightFactory.getBrowserContext().close();
+//	    }
+//	    if (PlaywrightFactory.getBrowser() != null) {
+//	        PlaywrightFactory.getBrowser().close();
+//	    }
+//	    if (PlaywrightFactory.getPlaywright() != null) {
+//	        PlaywrightFactory.getPlaywright().close();
+//	    }
 	}
 
 }
