@@ -50,19 +50,19 @@ public class PlaywrightFactory {
 		switch(browserName.toLowerCase()) {
 		case "chromium":
 //			browser=playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000));
-			Tbrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000)));
+			Tbrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(true).setSlowMo(1000)));
 			break;
 		case "firefox":
 //			browser=playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
-			Tbrowser.set(getPlaywright().firefox().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000)));
+			Tbrowser.set(getPlaywright().firefox().launch(new BrowserType.LaunchOptions().setHeadless(true).setSlowMo(1000)));
 			break;
 		case "safari":
 //			browser=playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
-			Tbrowser.set(getPlaywright().webkit().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000)));
+			Tbrowser.set(getPlaywright().webkit().launch(new BrowserType.LaunchOptions().setHeadless(true).setSlowMo(1000)));
 			break;
 		case "chrome":
 //			browser=playwright.chromium().launch(new BrowserType.LaunchOptions().setHandleSIGHUP(false));
-			Tbrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false).setSlowMo(1000)));
+			Tbrowser.set(getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(true).setSlowMo(1000)));
 		default: System.out.println("Please pass correct browsername");
 			break;
 		}
