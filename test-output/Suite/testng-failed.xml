@@ -3,16 +3,25 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
-    <listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.qa.opencart.tests.HomePageTest">
+        <methods>
+          <include name="HomepageLogin"/>
+          <include name="HomepageButton"/>
+          <include name="HomepageSearch"/>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.qa.opencart.tests.HomePageTest -->
       <class name="com.qa.opencart.tests.LoginPageTest">
         <methods>
+          <include name="LoginPageNavigationTest"/>
           <include name="doLogin"/>
           <include name="isForgotPasswordExistsTest"/>
-          <include name="SetUp"/>
           <include name="tearDown"/>
+          <include name="SetUp"/>
         </methods>
       </class> <!-- com.qa.opencart.tests.LoginPageTest -->
     </classes>

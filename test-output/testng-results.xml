@@ -2,54 +2,54 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-02T19:54:29 IST" name="Suite" finished-at="2026-02-02T19:55:10 IST" duration-ms="41247">
+  <suite started-at="2026-02-03T11:22:43 IST" name="Suite" finished-at="2026-02-03T11:23:35 IST" duration-ms="51498">
     <groups>
     </groups>
-    <test started-at="2026-02-02T19:54:29 IST" name="Test" finished-at="2026-02-02T19:55:10 IST" duration-ms="41247">
+    <test started-at="2026-02-03T11:22:43 IST" name="Test" finished-at="2026-02-03T11:23:35 IST" duration-ms="51498">
       <class name="com.qa.opencart.tests.HomePageTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.qa.opencart.tests.HomePageTest@19e4653c]" started-at="2026-02-02T19:54:29 IST" name="SetUp" finished-at="2026-02-02T19:54:49 IST" duration-ms="19858" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.qa.opencart.tests.HomePageTest@19e4653c]" started-at="2026-02-03T11:22:43 IST" name="SetUp" finished-at="2026-02-03T11:23:07 IST" duration-ms="23936" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="HomepageLogin()[pri:1, instance:com.qa.opencart.tests.HomePageTest@19e4653c]" started-at="2026-02-02T19:54:49 IST" name="HomepageLogin" finished-at="2026-02-02T19:54:49 IST" duration-ms="56" status="PASS">
+        <test-method signature="HomepageLogin()[pri:1, instance:com.qa.opencart.tests.HomePageTest@19e4653c]" started-at="2026-02-03T11:23:07 IST" name="HomepageLogin" finished-at="2026-02-03T11:23:07 IST" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomepageLogin -->
-        <test-method signature="HomepageGetUrl()[pri:2, instance:com.qa.opencart.tests.HomePageTest@19e4653c]" started-at="2026-02-02T19:54:50 IST" name="HomepageGetUrl" finished-at="2026-02-02T19:54:50 IST" duration-ms="5" status="PASS">
+        <test-method signature="HomepageGetUrl()[pri:2, instance:com.qa.opencart.tests.HomePageTest@19e4653c]" started-at="2026-02-03T11:23:08 IST" name="HomepageGetUrl" finished-at="2026-02-03T11:23:08 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomepageGetUrl -->
-        <test-method signature="HomepageSearch()[pri:3, instance:com.qa.opencart.tests.HomePageTest@19e4653c]" started-at="2026-02-02T19:54:50 IST" name="HomepageSearch" finished-at="2026-02-02T19:54:54 IST" duration-ms="4176" status="PASS">
+        <test-method signature="HomepageSearch()[pri:3, instance:com.qa.opencart.tests.HomePageTest@19e4653c]" started-at="2026-02-03T11:23:09 IST" name="HomepageSearch" finished-at="2026-02-03T11:23:13 IST" duration-ms="4170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomepageSearch -->
-        <test-method signature="HomepageButton()[pri:4, instance:com.qa.opencart.tests.HomePageTest@19e4653c]" started-at="2026-02-02T19:54:55 IST" name="HomepageButton" finished-at="2026-02-02T19:54:56 IST" duration-ms="1420" status="PASS">
+        <test-method signature="HomepageButton()[pri:4, instance:com.qa.opencart.tests.HomePageTest@19e4653c]" started-at="2026-02-03T11:23:13 IST" name="HomepageButton" finished-at="2026-02-03T11:23:17 IST" duration-ms="3473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomepageButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.HomePageTest@19e4653c]" started-at="2026-02-02T19:54:57 IST" name="tearDown" finished-at="2026-02-02T19:54:57 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.HomePageTest@19e4653c]" started-at="2026-02-03T11:23:17 IST" name="tearDown" finished-at="2026-02-03T11:23:18 IST" duration-ms="623" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.opencart.tests.HomePageTest -->
       <class name="com.qa.opencart.tests.LoginPageTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@3a7442c7]" started-at="2026-02-02T19:54:57 IST" name="SetUp" finished-at="2026-02-02T19:55:03 IST" duration-ms="6079" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@3a7442c7]" started-at="2026-02-03T11:23:18 IST" name="SetUp" finished-at="2026-02-03T11:23:26 IST" duration-ms="8437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="LoginPageNavigationTest()[pri:1, instance:com.qa.opencart.tests.LoginPageTest@3a7442c7]" started-at="2026-02-02T19:55:03 IST" name="LoginPageNavigationTest" finished-at="2026-02-02T19:55:05 IST" duration-ms="2491" status="PASS">
+        <test-method signature="LoginPageNavigationTest()[pri:1, instance:com.qa.opencart.tests.LoginPageTest@3a7442c7]" started-at="2026-02-03T11:23:26 IST" name="LoginPageNavigationTest" finished-at="2026-02-03T11:23:29 IST" duration-ms="2757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginPageNavigationTest -->
-        <test-method signature="isForgotPasswordExistsTest()[pri:2, instance:com.qa.opencart.tests.LoginPageTest@3a7442c7]" started-at="2026-02-02T19:55:06 IST" name="isForgotPasswordExistsTest" finished-at="2026-02-02T19:55:06 IST" duration-ms="61" status="PASS">
+        <test-method signature="isForgotPasswordExistsTest()[pri:2, instance:com.qa.opencart.tests.LoginPageTest@3a7442c7]" started-at="2026-02-03T11:23:30 IST" name="isForgotPasswordExistsTest" finished-at="2026-02-03T11:23:30 IST" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isForgotPasswordExistsTest -->
-        <test-method signature="doLogin()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@3a7442c7]" started-at="2026-02-02T19:55:06 IST" name="doLogin" finished-at="2026-02-02T19:55:10 IST" duration-ms="3602" status="PASS">
+        <test-method signature="doLogin()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@3a7442c7]" started-at="2026-02-03T11:23:30 IST" name="doLogin" finished-at="2026-02-03T11:23:34 IST" duration-ms="3835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@3a7442c7]" started-at="2026-02-02T19:55:10 IST" name="tearDown" finished-at="2026-02-02T19:55:10 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@3a7442c7]" started-at="2026-02-03T11:23:34 IST" name="tearDown" finished-at="2026-02-03T11:23:35 IST" duration-ms="519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

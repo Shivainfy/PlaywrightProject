@@ -25,12 +25,17 @@ public class BaseTest {
 		props=pf.init_Prop();
 		page=pf.initBrowser(props); // passing entire prop object reference to initBrowser method instead of "chromium" directly
 		home=new Homepage(page);
+		
+		if (page == null) {
+            throw new RuntimeException("Failed to create driver");
+        }
 	}
 	
 	@AfterClass
 	public void tearDown() {
-//		page.context().browser().close();
-		
+		page.context().browser().close();
+//		page.close();
+//		
 //		if (PlaywrightFactory.getBrowserContext() != null) {
 //	        PlaywrightFactory.getBrowserContext().close();
 //	    }
